@@ -1,0 +1,1328 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Homepage</title>
+    <link rel="stylesheet" href="/css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+      integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
+      crossorigin="anonymous"
+    />
+  </head>
+
+  <body>
+    <!-------------------- Navbar-------------------->
+    <div class="navbar_container">
+      <div class="navbar">
+        <div class="navbar_left">
+          <i class="fas fa-th"></i>
+          <h4>Change Management</h4>
+        </div>
+
+        <div class="navbar_center">
+          <div class="division">
+            <h4>Divison</h4>
+          </div>
+
+          <div class="subdivision">
+            <h4>Subdivison</h4>
+          </div>
+
+          <div class="add_criteria">
+            <h4>Add Criteria</h4>
+          </div>
+
+          <div class="search">
+            <i class="fal fa-search"></i>
+          </div>
+
+          <div class="search_dropdown">
+            <div class="search_bar">
+              <input type="text" placeholder="Search Criteria" />
+              <i class="fal fa-search"></i>
+            </div>
+
+            <h3>CMP Created</h3>
+
+            <input
+              type="date"
+              name="begin"
+              placeholder="dd/mm/yyyy - dd/mm/yyyy"
+              value="dd/mm/yyyy - dd/mm/yyyy"
+              min="1997-01-01"
+              max="2030-12-31"
+            />
+
+            <div class="search_checkboxes">
+              <div class="cmp_status">
+                <h3>CMP Status</h3>
+                <input type="checkbox" />
+                <label> Draft</label><br />
+                <input type="checkbox" />
+                <label> Closed</label><br />
+                <input type="checkbox" />
+                <label> Upcoming</label><br />
+                <input type="checkbox" />
+                <label> Past due</label><br /><br />
+              </div>
+
+              <div class="no_of_assets">
+                <h3>No. of assets</h3>
+                <input type="checkbox" />
+                <label> Less than 5 CMPs</label><br />
+                <input type="checkbox" />
+                <label> 5-10 CMPs</label><br />
+                <input type="checkbox" />
+                <label> 10-15 CMPS</label><br />
+                <input type="checkbox" />
+                <label><span>000</span> CMPs</label><br /><br />
+              </div>
+            </div>
+          </div>
+
+          <div class="divison_dropdown">
+            <div>
+              <ul>
+                <li>kansas</li>
+                <li>Twin Cities</li>
+                <li>Hardland</li>
+                <li>CHicago</li>
+                <li>Montana</li>
+              </ul>
+            </div>
+            <div>
+              <ul>
+                <li>Nortwest</li>
+                <li>Red River</li>
+                <li>California</li>
+                <li>Southwest</li>
+                <li>Powder River</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="subdivison_dropdown">
+            <div>
+              <ul>
+                <li>Arkansas City</li>
+                <li>Boise Cities</li>
+                <li>Dalhart</li>
+                <li>Douglass</li>
+                <li>Emporia</li>
+                <li>Twin Peaks</li>
+                <li>kansas City Terminal</li>
+              </ul>
+            </div>
+            <div>
+              <ul>
+                <li>Hereford</li>
+                <li>La Junta</li>
+                <li>Panhandle</li>
+                <li>South Plains</li>
+                <li>strong city</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="navbar_right">
+          <i class="fal fa-bell"></i>
+
+          <div class="create_cmp_btn" id="create_cmp_btn">
+            <i class="far fa-plus"></i>
+            <h4>Create CMP</h4>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--------------------- Main Section----------------- -->
+    <div class="main_section">
+      <div class="main_section_grid">
+        <!-- ----------Side panel---------- -->
+        <div class="side_panel" id="side_panel">
+          <div class="side_panel-heading">Showing draft/Submitted CMPs</div>
+
+          <div class="tabination">
+            <div class="all_tab tab_select">All</div>
+            <div class="my_cmp_tab">My CMPs (0)</div>
+
+            <div class="favourites_tab tabination_border_class">
+              Favourites (11)
+            </div>
+          </div>
+
+          <div class="filters">
+            <span>Showing 142 CMPs by division</span>
+            <div class="filter_btn">
+              <i class="far fa-sliders-h"></i>
+              <p>Filters</p>
+            </div>
+          </div>
+          <!------------ Tabs content -------------->
+          <!-------------- All tab content ---------------->
+          <div class="all_tab_content">
+            <div class="cmp_card" id="cmp_card_1">
+              <h2 class="cmp_card_title">Hartland</h2>
+              <div class="cmp_card_info">
+                <div>
+                  <h4>Roadmaster:</h4>
+                  <p>John Doe</p>
+                  <span> (123-456-79)</span>
+                </div>
+                <div>
+                  <h4>Next cutover</h4>
+                  <p>07/15/2022</p>
+                  <span>(3 days)</span>
+                </div>
+              </div>
+
+              <div class="card_status_section">
+                <div class="card_icon past_due">
+                  <i class="fad fa-alarm-clock"></i>
+                  <span>50</span>
+                  <p>Past Due</p>
+                </div>
+
+                <div class="card_icon submitted">
+                  <i class="fad fa-exclamation-circle"></i>
+                  <span>50</span>
+                  <p>Submitted</p>
+                </div>
+
+                <div class="card_icon draft">
+                  <i class="fad fa-exclamation-circle"></i>
+                  <span>50</span>
+                  <p>Draft</p>
+                </div>
+
+                <div class="card_icon completed">
+                  <i class="fad fa-check-circle"></i>
+                  <span>50</span>
+                  <p>Completed</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="cmp_card">
+              <h2 class="cmp_card_title">California</h2>
+              <div class="cmp_card_info">
+                <div>
+                  <h4>Roadmaster:</h4>
+                  <p>John Doe</p>
+                  <span> (123-456-79)</span>
+                </div>
+                <div>
+                  <h4>Next cutover</h4>
+                  <p>07/15/2022</p>
+                  <span>(3 days)</span>
+                </div>
+              </div>
+
+              <div class="card_status_section">
+                <div class="card_icon past_due">
+                  <i class="fad fa-alarm-clock"></i>
+                  <span>50</span>
+                  <p>Past Due</p>
+                </div>
+
+                <div class="card_icon submitted">
+                  <i class="fad fa-exclamation-circle"></i>
+                  <span>50</span>
+                  <p>Submitted</p>
+                </div>
+
+                <div class="card_icon draft">
+                  <i class="fad fa-exclamation-circle"></i>
+                  <span>50</span>
+                  <p>Draft</p>
+                </div>
+
+                <div class="card_icon completed">
+                  <i class="fad fa-check-circle"></i>
+                  <span>50</span>
+                  <p>Completed</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- My cmp content -->
+          <div class="my_cmp_tab_content">
+            <div class="my_cmp_content_card" >
+              <div class="my_cmp_content_card_number">
+                <p>123456789101</p>
+                <div>Draft</div>
+                <i class="fal fa-heart"></i>
+              </div>
+
+              <div class="my_cmp_content_card_heading">
+                <h3>Move the Signla by 50ft in NIC dir</h3>
+                <h3>18d</h3>
+              </div>
+
+              <div class="my_cmp_content_card_owner">
+                <span>Owner:</span>
+                John Doe(123-456-789)
+              </div>
+
+              <div class="my_cmp_content_card_des">
+                In publishing and graphic design, Lorem ipsum is a placeholder
+                text commonly used to demonstrate the visual form of a document
+                or a typeface
+              </div>
+
+              <div class="my_cmp_content_card_locandstatus">
+                <div class="my_cmp_content_card_location">
+                  <i class="fas fa-map-marker-alt"></i>
+                  <h3>San Bernardio</h3>
+                </div>
+
+                <div class="my_cmp_content_card_status">
+                  <div>
+                    5
+                    <span>Assets</span>
+                  </div>
+
+                  <div>
+                    5
+                    <span>Non-Assets</span>
+                  </div>
+
+                  <div>
+                    5
+                    <span>Others</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="my_cmp_content_card" >
+              <div
+                class="my_cmp_content_card_number my_cmp_content_card_number_submited"
+              >
+                <p>123456789101</p>
+                <div>Submitted</div>
+                <i class="fas fa-heart"></i>
+              </div>
+
+              <div
+                class="my_cmp_content_card_heading my_cmp_content_card_heading_submitted"
+              >
+                <h3>Move the Signla by 50ft in NIC dir</h3>
+                <h3>18d</h3>
+              </div>
+
+              <div class="my_cmp_content_card_owner">
+                <span>Owner:</span>
+                John Doe(123-456-789)
+              </div>
+
+              <div class="my_cmp_content_card_des">
+                In publishing and graphic design, Lorem ipsum is a placeholder
+                text commonly used to demonstrate the visual form of a document
+                or a typeface
+              </div>
+
+              <div class="my_cmp_content_card_locandstatus">
+                <div class="my_cmp_content_card_location">
+                  <i class="fas fa-map-marker-alt"></i>
+                  <h3>San Bernardio</h3>
+                </div>
+
+                <div class="my_cmp_content_card_status">
+                  <div>
+                    5
+                    <span>Assets</span>
+                  </div>
+
+                  <div>
+                    5
+                    <span>Non-Assets</span>
+                  </div>
+
+                  <div>
+                    5
+                    <span>Others</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- -----------Fovourites content-------------- -->
+          <div class="favourites_tab_content">
+            <div class="my_cmp_content">
+              <div class="my_cmp_content_card" id="cmp_card_1">
+                <div class="my_cmp_content_card_number">
+                  <p>123456789101</p>
+                  <div>Draft</div>
+                  <i class="fal fa-heart"></i>
+                </div>
+
+                <div class="my_cmp_content_card_heading">
+                  <h3>Move the Signla by 50ft in NIC dir</h3>
+                  <h3>18d</h3>
+                </div>
+
+                <div class="my_cmp_content_card_owner">
+                  <span>Owner:</span>
+                  John Doe(123-456-789)
+                </div>
+
+                <div class="my_cmp_content_card_des">
+                  In publishing and graphic design, Lorem ipsum is a placeholder
+                  text commonly used to demonstrate the visual form of a
+                  document or a typeface
+                </div>
+
+                <div class="my_cmp_content_card_locandstatus">
+                  <div class="my_cmp_content_card_location">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <h3>San Bernardio</h3>
+                  </div>
+
+                  <div class="my_cmp_content_card_status">
+                    <div>
+                      5
+                      <span>Assets</span>
+                    </div>
+
+                    <div>
+                      5
+                      <span>Non-Assets</span>
+                    </div>
+
+                    <div>
+                      5
+                      <span>Others</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="my_cmp_content_card">
+                <div
+                  class="my_cmp_content_card_number my_cmp_content_card_number_submited"
+                >
+                  <p>123456789101</p>
+                  <div>Submitted</div>
+                  <i class="fas fa-heart"></i>
+                </div>
+
+                <div
+                  class="my_cmp_content_card_heading my_cmp_content_card_heading_submitted"
+                >
+                  <h3>Move the Signla by 50ft in NIC dir</h3>
+                  <h3>18d</h3>
+                </div>
+
+                <div class="my_cmp_content_card_owner">
+                  <span>Owner:</span>
+                  John Doe(123-456-789)
+                </div>
+
+                <div class="my_cmp_content_card_des">
+                  In publishing and graphic design, Lorem ipsum is a placeholder
+                  text commonly used to demonstrate the visual form of a
+                  document or a typeface
+                </div>
+
+                <div class="my_cmp_content_card_locandstatus">
+                  <div class="my_cmp_content_card_location">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <h3>San Bernardio</h3>
+                  </div>
+
+                  <div class="my_cmp_content_card_status">
+                    <div>
+                      5
+                      <span>Assets</span>
+                    </div>
+
+                    <div>
+                      5
+                      <span>Non-Assets</span>
+                    </div>
+
+                    <div>
+                      5
+                      <span>Others</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-------------Create CMP Section  ----------->
+        <div class="create_cmp_panel_container" id="create_cmp_panel_container">
+          <div class="create_cmp_panel">
+            <div class="create_cmp_heading">
+              <div>
+                <i class="far fa-angle-left"></i>
+                <h3>Create Cmp</h3>
+                <i class="far fa-times-circle"></i>
+              </div>
+            </div>
+
+            <div class="eas_info_section">
+              <div class="eas_info_heading">
+                <i class="far fa-link"></i>
+                <h3>EAS Information</h3>
+              </div>
+
+              <input type="text" placeholder="EAS Sequence Number" disabled />
+              <br />
+              <input
+                type="text"
+                placeholder="Select EAS Phase Number"
+                disabled
+              />
+
+              <div class="switch_btn">
+                <label class="switch">
+                  <input type="checkbox" />
+                  <span class="slider round"></span>
+                </label>
+
+                <span>EAS Information not available</span>
+              </div>
+            </div>
+
+            <div class="cmp_info_section">
+              <div class="cmp_info_heading">
+                <i class="fas fa-map-marker-alt"></i>
+                <h3>CMP Information</h3>
+              </div>
+              <div class="cmp_info_content">
+                <select>
+                  <option value="Select Subdivison">Select Subdivison</option>
+                  <option value="Seclect division">Seclect division</option>
+                  <option value="Select all">Select all</option>
+                </select>
+                <br />
+                <label>Cutover date</label>
+                <input type="date" id="Cutover_date" />
+                <br />
+                <input type="text" placeholder="CMP Title" class="cmp_title" />
+
+                <textarea id="w3review" name="w3review" rows="4">
+                  It is a long established fact that a reader will be distracted by the
+                  readable content of a page when looking at its layout.
+               </textarea
+                >
+
+                <div class="attachment">
+                  <label for="inputTag">
+                    <span id="imageName">Add Attachment</span>
+                    <i class="fas fa-file-plus"></i>
+                    <input id="inputTag" type="file" />
+                  </label>
+                </div>
+              </div>
+            </div>
+
+            <div class="change_section">
+              <div>
+                <i class="far fa-digging"></i>
+                <h3>Changes</h3>
+              </div>
+
+              <span>Collapse</span>
+            </div>
+
+            <div class="edit_cmp_change_collapse_section">
+              <fieldset>
+                <legend>Select Change type</legend>
+                <div class="edit_cmp_change_collapse_section_radio_buttons">
+                  <input type="radio" />
+                  <label>Exixting Asset</label><br />
+                  <input type="radio" />
+                  <label>Non Asset</label><br />
+                  <input type="radio" />
+                  <label>New Asset</label>
+                </div>
+
+                <div class="add_change_btn">
+                  <i class="fal fa-plus"></i>
+                  Add a change
+                </div>
+
+                <div class="change_tab_content">
+                  <div>
+                    <h4>Signal TMK_0C</h4>
+                    <p>Change Type: Replace</p>
+                  </div>
+
+                  <div>
+                    <span> North Sanbernardio</span>
+
+                    <span>N15 W10</span>
+                    <span>LS: 7200</span>
+                    <span>MPL: 367</span>
+                  </div>
+                </div>
+
+                <div class="change_tab_content">
+                  <div>
+                    <h4>Signal TMK_0C</h4>
+                    <p>Change Type: Replace</p>
+                  </div>
+
+                  <div>
+                    <span> North Sanbernardio</span>
+                    <span>N15 W10</span>
+                    <span>LS: 7200</span>
+                    <span>MPL: 367</span>
+                  </div>
+                </div>
+
+                <div class="change_tab_content change_tab_content_no_border">
+                  <div>
+                    <h4>Signal TMK_0C</h4>
+                    <p>Change Type: Replace</p>
+                  </div>
+
+                  <div>
+                    <span> North Sanbernardio</span>
+                    <span>N15 W10</span>
+                    <span>LS: 7200</span>
+                    <span>MPL: 367</span>
+                  </div>
+                </div>
+              </fieldset>
+            </div>
+          </div>
+          <div class="save_submit_btns">
+            <button>Save as Draft</button>
+            <button>Submit CMP</button>
+          </div>
+          <div class="side_btn">
+            <i class="far fa-angle-left"></i>
+          </div>
+        </div>
+
+        <!------------- Cmp  search results ------------->
+        <div class="cmp_search_results">
+          <div class="create_cmp_heading">
+            <div>
+              <i class="far fa-angle-left to_main_panel"></i>
+              <h3>Search Results</h3>
+              <i class="far fa-times-circle"></i>
+            </div>
+          </div>
+
+          <div class="filters">
+            <span>Showing 142 CMPs by division</span>
+            <div class="filter_btn">
+              <i class="far fa-sliders-h"></i>
+              <p>Filters</p>
+            </div>
+          </div>
+          <div class="cmp_card" id="to_cmp_card_selection_window">
+            <h2 class="cmp_card_title">Hartland</h2>
+            <div class="cmp_card_info">
+              <div>
+                <h4>Roadmaster:</h4>
+                <p>John Doe</p>
+                <span> (123-456-79)</span>
+              </div>
+              <div>
+                <h4>Next cutover</h4>
+                <p>07/15/2022</p>
+                <span>(3 days)</span>
+              </div>
+            </div>
+
+            <div class="card_status_section">
+              <div class="card_icon past_due">
+                <i class="fad fa-alarm-clock"></i>
+                <span>50</span>
+                <p>Past Due</p>
+              </div>
+
+              <div class="card_icon submitted">
+                <i class="fad fa-exclamation-circle"></i>
+                <span>50</span>
+                <p>Submitted</p>
+              </div>
+
+              <div class="card_icon draft">
+                <i class="fad fa-exclamation-circle"></i>
+                <span>50</span>
+                <p>Draft</p>
+              </div>
+
+              <div class="card_icon completed">
+                <i class="fad fa-check-circle"></i>
+                <span>50</span>
+                <p>Completed</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="cmp_card" id="cmp_card_1">
+            <h2 class="cmp_card_title">Hartland</h2>
+            <div class="cmp_card_info">
+              <div>
+                <h4>Roadmaster:</h4>
+                <p>John Doe</p>
+                <span> (123-456-79)</span>
+              </div>
+              <div>
+                <h4>Next cutover</h4>
+                <p>07/15/2022</p>
+                <span>(3 days)</span>
+              </div>
+            </div>
+
+            <div class="card_status_section">
+              <div class="card_icon past_due">
+                <i class="fad fa-alarm-clock"></i>
+                <span>50</span>
+                <p>Past Due</p>
+              </div>
+
+              <div class="card_icon submitted">
+                <i class="fad fa-exclamation-circle"></i>
+                <span>50</span>
+                <p>Submitted</p>
+              </div>
+
+              <div class="card_icon draft">
+                <i class="fad fa-exclamation-circle"></i>
+                <span>50</span>
+                <p>Draft</p>
+              </div>
+
+              <div class="card_icon completed">
+                <i class="fad fa-check-circle"></i>
+                <span>50</span>
+                <p>Completed</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-------------Cmp Card Selection Window------------->
+        <div class="cmp_card_selection_window">
+          <div class="create_cmp_heading">
+            <div>
+              <i class="far fa-angle-left to_cmp_search"></i>
+              <h3>Search Results</h3>
+              <i class="far fa-times-circle"></i>
+            </div>
+          </div>
+
+          <div class="filters">
+            <span>Showing 142 CMPs by division</span>
+            <div class="filter_btn">
+              <i class="far fa-sliders-h"></i>
+              <p>Filters</p>
+            </div>
+          </div>
+          <div class="my_cmp_content_card" id="to_cmp_details_panel">
+            <div class="my_cmp_content_card_number">
+              <p>123456789101</p>
+              <div>Draft</div>
+              <i class="fal fa-heart"></i>
+            </div>
+
+            <div class="my_cmp_content_card_heading">
+              <h3>Move the Signla by 50ft in NIC dir</h3>
+              <h3>18d</h3>
+            </div>
+
+            <div class="my_cmp_content_card_owner">
+              <span>Owner:</span>
+              John Doe(123-456-789)
+            </div>
+
+            <div class="my_cmp_content_card_des">
+              In publishing and graphic design, Lorem ipsum is a placeholder
+              text commonly used to demonstrate the visual form of a document or
+              a typeface
+            </div>
+
+            <div class="my_cmp_content_card_locandstatus">
+              <div class="my_cmp_content_card_location">
+                <i class="fas fa-map-marker-alt"></i>
+                <h3>San Bernardio</h3>
+              </div>
+
+              <div class="my_cmp_content_card_status">
+                <div>
+                  5
+                  <span>Assets</span>
+                </div>
+
+                <div>
+                  5
+                  <span>Non-Assets</span>
+                </div>
+
+                <div>
+                  5
+                  <span>Others</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="my_cmp_content_card">
+            <div
+              class="my_cmp_content_card_number my_cmp_content_card_number_submited"
+            >
+              <p>123456789101</p>
+              <div>Submitted</div>
+              <i class="fas fa-heart"></i>
+            </div>
+
+            <div
+              class="my_cmp_content_card_heading my_cmp_content_card_heading_submitted"
+            >
+              <h3>Move the Signla by 50ft in NIC dir</h3>
+              <h3>18d</h3>
+            </div>
+
+            <div class="my_cmp_content_card_owner">
+              <span>Owner:</span>
+              John Doe(123-456-789)
+            </div>
+
+            <div class="my_cmp_content_card_des">
+              In publishing and graphic design, Lorem ipsum is a placeholder
+              text commonly used to demonstrate the visual form of a document or
+              a typeface
+            </div>
+
+            <div class="my_cmp_content_card_locandstatus">
+              <div class="my_cmp_content_card_location">
+                <i class="fas fa-map-marker-alt"></i>
+                <h3>San Bernardio</h3>
+              </div>
+
+              <div class="my_cmp_content_card_status">
+                <div>
+                  5
+                  <span>Assets</span>
+                </div>
+
+                <div>
+                  5
+                  <span>Non-Assets</span>
+                </div>
+
+                <div>
+                  5
+                  <span>Others</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!----------------- CMP Details---------------- -->
+        <div class="cmp_details_panel_container">
+          <div class="cmp_details_panel">
+            <div class="cmp_details_heading">
+              <div>
+                <i class="far fa-angle-left to_cmp_card_selection"></i>
+                <h3>Search Results</h3>
+                <i class="fas fa-eye"></i>
+              </div>
+            </div>
+            <div class="cmp_details_eas_info">
+              <div class="cmp_details_eas_info_heading">
+                <i class="far fa-link"></i>
+                <h3>EAS Information</h3>
+              </div>
+              <div class="cmp_details_eas_info_content">
+                <h5>Sequence :</h5>
+                <p>12345 - Emporia subdivision wide signal upgrade</p>
+
+                <h5>Phase :</h5>
+                <p>01 - MP Phase 1: 123.456 - 678.895</p>
+              </div>
+            </div>
+
+            <div class="cmp_details_cmp_info">
+              <div class="cmp_details_cmp_info_heading">
+                <i class="fas fa-map-marker-alt"></i>
+                <h3>CMP Information</h3>
+                <span>Collapse</span>
+              </div>
+              <div class="cmp_details_cmp_info_content">
+                <div>
+                  <h5>CMP Number:</h5>
+                  <p>18724381493</p>
+                </div>
+
+                <div>
+                  <h5>Subdivision:</h5>
+                  <p>Emporia</p>
+                </div>
+
+                <div>
+                  <h5>Cutover date:</h5>
+                  <p>dd-mm-yyyy</p>
+                </div>
+                <div>
+                  <h5>CMP Title:</h5>
+                  <p>CMP 001_abc</p>
+                </div>
+
+                <div>
+                  <h5>CMP Description:</h5>
+                  <p>
+                    The "range" input type allows you to specify a numeric value
+                    which must be no less and no more than a given value.
+                  </p>
+                </div>
+
+                <div>
+                  <h5>Attachments :</h5>
+                  <div>
+                    <i class="fas fa-file-plus"></i>
+                    <p>12345 Emporia change.pdf</p>
+                  </div>
+                  <div>
+                    <i class="fas fa-file-plus"></i>
+                    <p>12345 Emporia change.pdf</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="change_section change_section_cmp_detail">
+                <div>
+                  <i class="far fa-digging"></i>
+                  <h3>Changes</h3>
+                </div>
+                <span>Collapse</span>
+              </div>
+
+              <div class="change_collapse_section">
+                <div class="change_tabination">
+                  <div>Assets(01)</div>
+
+                  <div>Non Assets(01)</div>
+                </div>
+
+                <div class="change_tab_content">
+                  <div>
+                    <h4>Signal TMK_0C</h4>
+                    <p>Change Type: Replace</p>
+                  </div>
+
+                  <div>
+                    <span> North Sanbernardio</span>
+                    <span>N15 W10</span>
+                    <span>LS: 7200</span>
+                    <span>MPL: 367</span>
+                  </div>
+                </div>
+
+                <div class="change_tab_content">
+                  <div>
+                    <h4>Signal TMK_0C</h4>
+                    <p>Change Type: Replace</p>
+                  </div>
+
+                  <div>
+                    <span> North Sanbernardio</span>
+                    <span>N15 W10</span>
+                    <span>LS: 7200</span>
+                    <span>MPL: 367</span>
+                  </div>
+                </div>
+
+                <div class="change_tab_content change_tab_content_no_border">
+                  <div>
+                    <h4>Signal TMK_0C</h4>
+                    <p>Change Type: Replace</p>
+                  </div>
+
+                  <div>
+                    <span> North Sanbernardio</span>
+                    <span>N15 W10</span>
+                    <span>LS: 7200</span>
+                    <span>MPL: 367</span>
+                  </div>
+                </div>
+              </div>
+              <div class="cmp_details_collaborators">
+                <div class="cmp_details_collaborators_heading">
+                  <i class="fas fa-users"></i>
+                  <h3>Collaborators</h3>
+                </div>
+                <div class="cmp_details_collaborators_content">
+                  <div>
+                    <i class="fas fa-user-circle"></i>
+                    <h3>John Doe (Interested party)</h3>
+                  </div>
+                  <div>
+                    <i class="fas fa-user-circle"></i>
+                    <h3>John Doe (EAS Owner)</h3>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="edit_btn">
+            <i class="fas fa-pencil"></i>
+          </div>
+        </div>
+
+        <!--------------------- Edit CMP Panel-------------------- -->
+
+        <div class="edit_cmp_panel_container">
+          <div class="edit_cmp_panel">
+            <div class="edit_cmp_heading">
+              <div>
+                <i class="far fa-angle-left to_cmp_details"></i>
+                <h3>Edit Cmp</h3>
+                <i class="far fa-times-circle"></i>
+              </div>
+            </div>
+
+            <div class="edit_panel_eas_info_section">
+              <div class="edit_panel_eas_info_heading">
+                <i class="far fa-link"></i>
+                <h3>EAS Information</h3>
+              </div>
+
+              <input type="text" placeholder="EAS Sequence Number" disabled />
+              <br />
+              <input
+                type="text"
+                placeholder="Select EAS Phase Number"
+                disabled
+              />
+
+              <div class="switch_btn">
+                <label class="switch">
+                  <input type="checkbox" />
+                  <span class="slider round"></span>
+                </label>
+
+                <span>EAS Information not available</span>
+              </div>
+            </div>
+
+            <div class="edit_panel_cmp_info_section">
+              <div class="edit_panel_cmp_info_heading">
+                <i class="fas fa-map-marker-alt"></i>
+                <h3>CMP Information</h3>
+              </div>
+              <div class="edit_panel_cmp_info_content">
+                <input type="text" class="first_one_input" value="152631897" />
+                <select>
+                  <option value="Select Subdivison">Aberdeen</option>
+                  <option value="Seclect division">Seclect division</option>
+                  <option value="Select all">Select all</option>
+                </select>
+                <br />
+                <label>Cutover date</label>
+                <input type="date" id="Cutover_date" />
+                <br />
+                <input type="text" placeholder="CMP Title" class="cmp_title" />
+
+                <textarea id="w3review" name="w3review" rows="4">
+                  It is a long established fact that a reader will be distracted by the
+                  readable content of a page when looking at its layout.
+               </textarea
+                >
+
+                <div class="attachment">
+                  <label for="inputTag">
+                    <span id="imageName">Add Attachment</span>
+                    <i class="fas fa-file-plus"></i>
+                    <input id="inputTag" type="file" />
+                  </label>
+                </div>
+              </div>
+            </div>
+
+            <div class="change_section">
+              <div>
+                <i class="far fa-digging"></i>
+                <h3>Changes</h3>
+              </div>
+
+              <span>Collapse</span>
+            </div>
+
+            <div class="edit_cmp_change_collapse_section">
+              <fieldset>
+                <legend>Select Change type</legend>
+                <div class="edit_cmp_change_collapse_section_radio_buttons">
+                  <input type="radio" />
+                  <label>Exixting Asset</label><br />
+                  <input type="radio" />
+                  <label>Non Asset</label><br />
+                  <input type="radio" />
+                  <label>New Asset</label>
+                </div>
+
+                <div class="add_change_btn">
+                  <i class="fal fa-plus"></i>
+                  Add a change
+                </div>
+
+                <div class="change_tab_content">
+                  <div>
+                    <h4>Signal TMK_0C</h4>
+                    <p>Change Type: Replace</p>
+                  </div>
+
+                  <div>
+                    <span> North Sanbernardio</span>
+
+                    <span>N15 W10</span>
+                    <span>LS: 7200</span>
+                    <span>MPL: 367</span>
+                  </div>
+                </div>
+
+                <div class="change_tab_content">
+                  <div>
+                    <h4>Signal TMK_0C</h4>
+                    <p>Change Type: Replace</p>
+                  </div>
+
+                  <div>
+                    <span> North Sanbernardio</span>
+                    <span>N15 W10</span>
+                    <span>LS: 7200</span>
+                    <span>MPL: 367</span>
+                  </div>
+                </div>
+
+                <div class="change_tab_content change_tab_content_no_border">
+                  <div>
+                    <h4>Signal TMK_0C</h4>
+                    <p>Change Type: Replace</p>
+                  </div>
+
+                  <div>
+                    <span> North Sanbernardio</span>
+                    <span>N15 W10</span>
+                    <span>LS: 7200</span>
+                    <span>MPL: 367</span>
+                  </div>
+                </div>
+              </fieldset>
+            </div>
+
+            <div class="edit_cmp_collaborators">
+              <div class="edit_cmp_collaborators_heading">
+                <i class="fas fa-users"></i>
+                <h3>Collaborators</h3>
+                <span>Collapse</span>
+              </div>
+              <div class="edit_cmp_collaborators_content">
+                <div class="add_collaborator_btn">
+                  <i class="fal fa-plus"></i>
+                  Add a Collaborator
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="save_submit_btns edit_cmp_save_submit_btns">
+            <button class="save_btn">Save as Draft</button>
+            <button class="submit_btn">Submit CMP</button>
+          </div>
+        </div>
+        <!---------------- Map -------------->
+        <div class="map_area">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d24190.458680927724!2d-73.86155555561832!3d40.72225762715091!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c25e272209dded%3A0xc713fa428b2ab9ea!2sForest%20Hills%2C%20Queens%2C%20NY%2011375%2C%20USA!5e0!3m2!1sen!2s!4v1658612898172!5m2!1sen!2s"
+            style="border: 0"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+          ></iframe>
+          <div class="map_circles">123</div>
+
+          <div class="map_square_box">
+            <div class="square">
+              18 d
+              <div class="triangle"></div>
+            </div>
+          </div>
+          <div class="map_icons">
+            <div class="map_upper_icons">
+              <div class="asset_filter_container">
+                <i class="fas fa-subway"></i>
+
+                <!-- Asset filter Dropdown -->
+                <div class="asset_filter_card">
+                  <div class="asset_filter_card_item1">
+                    <div></div>
+                    <span>All Assets</span>
+                    <label class="switch">
+                      <input type="checkbox" />
+                      <span class="slider round"></span>
+                    </label>
+                  </div>
+
+                  <div class="asset_filter_card_item2">
+                    <div></div>
+                    <span>Track Circuit</span>
+                    <label class="switch">
+                      <input type="checkbox" />
+                      <span class="slider round"></span>
+                    </label>
+                  </div>
+
+                  <div class="asset_filter_card_item3">
+                    <div></div>
+                    <span>Switch Subdivison</span>
+                    <label class="switch">
+                      <input type="checkbox" />
+                      <span class="slider round"></span>
+                    </label>
+                  </div>
+
+                  <div class="asset_filter_card_item4">
+                    <div></div>
+                    <span>Speed Sign</span>
+                    <label class="switch">
+                      <input type="checkbox" />
+                      <span class="slider round"></span>
+                    </label>
+                  </div>
+
+                  <div class="asset_filter_card_item5">
+                    <div></div>
+                    <span>Signal</span>
+                    <label class="switch">
+                      <input type="checkbox" />
+                      <span class="slider round"></span>
+                    </label>
+                  </div>
+
+                  <div class="asset_filter_card_item6">
+                    <div></div>
+                    <span>Road Crossing</span>
+                    <label class="switch">
+                      <input type="checkbox" />
+                      <span class="slider round"></span>
+                    </label>
+                  </div>
+
+                  <div class="asset_filter_card_item7">
+                    <div></div>
+                    <span>Operation sign</span>
+                    <label class="switch">
+                      <input type="checkbox" />
+                      <span class="slider round"></span>
+                    </label>
+                  </div>
+
+                  <div class="asset_filter_card_item8">
+                    <div></div>
+                    <span>Milepost</span>
+                    <label class="switch">
+                      <input type="checkbox" />
+                      <span class="slider round"></span>
+                    </label>
+                  </div>
+
+                  <div class="asset_filter_card_item9">
+                    <div></div>
+                    <span>Clearance</span>
+                    <label class="switch">
+                      <input type="checkbox" />
+                      <span class="slider round"></span>
+                    </label>
+                  </div>
+                </div>
+              </div>
+              <!-- Cmp filter Dropdown -->
+              <div class="cmp_filter_container">
+                <i class="far fa-digging" id="cmp_filter_icon"></i>
+                <div class="cmp_filter_card">
+                  <div class="cmp_filter_card_item1">
+                    <div></div>
+                    <span>All CMPs</span>
+                    <label class="switch">
+                      <input type="checkbox" />
+                      <span class="slider round"></span>
+                    </label>
+                  </div>
+
+                  <div class="cmp_filter_card_item2">
+                    <div></div>
+                    <span>Past Dues</span>
+                    <label class="switch">
+                      <input type="checkbox" />
+                      <span class="slider round"></span>
+                    </label>
+                  </div>
+
+                  <div class="cmp_filter_card_item3">
+                    <div></div>
+                    <span>Draft</span>
+                    <label class="switch">
+                      <input type="checkbox" />
+                      <span class="slider round"></span>
+                    </label>
+                  </div>
+
+                  <div class="cmp_filter_card_item4">
+                    <div></div>
+                    <span>Upcoming</span>
+                    <label class="switch">
+                      <input type="checkbox" />
+                      <span class="slider round"></span>
+                    </label>
+                  </div>
+
+                  <div class="cmp_filter_card_item5">
+                    <div></div>
+                    <span>Completed</span>
+                    <label class="switch">
+                      <input type="checkbox" />
+                      <span class="slider round"></span>
+                    </label>
+                  </div>
+
+                  <div class="cmp_filter_card_item6">
+                    <div></div>
+                    <span>Time to cutover</span>
+                    <label class="switch">
+                      <input type="checkbox" />
+                      <span class="slider round"></span>
+                    </label>
+                  </div>
+
+                  <div class="input_range">
+                    <input
+                      type="range"
+                      id="vol"
+                      name="vol"
+                      min="1"
+                      max="5"
+                      step="1"
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="map_lower_icons">
+              <i class="fas fa-home"></i>
+              <i class="far fa-plus"></i>
+              <i class="far fa-minus"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="./javascript/javascript.js"></script>
+  </body>
+</html>
